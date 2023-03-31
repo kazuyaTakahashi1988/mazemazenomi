@@ -1,0 +1,17 @@
+{
+  "name": "まぜまぜの実",
+  "version": "1.0.2",
+  "manifest_version": 3,
+  "description": "Udemyでの選択式問題をシャッフルします",
+  "background": {
+    "service_worker": "assets/js/background.js",
+    "type": "module"
+  },
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "favicon.png",
+    "48": "favicon.png",
+    "128": "favicon.png"
+  }
+}

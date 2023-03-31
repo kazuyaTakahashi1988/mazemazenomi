@@ -1,0 +1,25 @@
+.mc-quiz-question--container--3GZ4h .ud-unstyled-list{
+    position: relative;
+    z-index: 0;
+}
+.mc-quiz-question--container--3GZ4h .ud-unstyled-list::after{
+    content: "Enterキーを押してください";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+.running .mc-quiz-question--container--3GZ4h .ud-unstyled-list::after{
+    content: "";
+} 
+.active .mc-quiz-question--container--3GZ4h .ud-unstyled-list::after{
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.2s;
+}
